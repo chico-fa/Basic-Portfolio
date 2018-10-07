@@ -30,6 +30,7 @@
 
 .nav a {
     transition: all .5s;
+    color: #ffffff;
 }
 
 /* Styles for larger screens */
