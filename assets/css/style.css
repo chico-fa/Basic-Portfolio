@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+.main-nav {
+    width: 100%;
+    background: teal;
+    min-height: 30px;
+    padding: 30px;
+    position: fixed;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.nav .name {
+    display: none;
+}
+
+.nav li {
+    padding: 5px 10px 10px 10px;
+}
+
+.nav a {
+    transition: all .5s;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+    .flex {
+        display: flex;
+        max-width: 1200px;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    header {
+        min-height: 450px;
+    }
+
+    .nav {
+        max-width: 1200px;
+    }
+
+    .nav .name {
+        display: block;
+        margin-right: auto;
+        color: white;
+    }
+
+    main {
+        padding-top: 50px;
+    }
+
+    main p {
+        line-height: 1.6em;
+    }
+
+    footer {
+        font-size: 1.3em;
+        max-width: 1200px;
+        margin: 40px auto;
+    }
+}
